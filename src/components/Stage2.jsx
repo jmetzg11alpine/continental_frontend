@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import axios from 'axios'
+import './styles.css'
 
 const Stage2 = ({ data }) => {
   const [ids, setIds] = useState()
@@ -7,7 +8,7 @@ const Stage2 = ({ data }) => {
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
-    axios.get('http://127.0.0.1:8000/2').then((d) => {
+    axios.get('https://axh4l5.deta.dev/2').then((d) => {
       setIds(d.data.ids)
       setTitles(d.data.titles)
       setLoaded(true)
@@ -23,7 +24,7 @@ const Stage2 = ({ data }) => {
   }
 
   return (
-    <div>
+    <div className='info-container'>
       <h3>Stage 2</h3>
       {loaded ? <ul>{info}</ul> : <p>loading...</p>}
     </div>

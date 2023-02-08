@@ -5,3 +5,11 @@
 .label-container {
   padding: 10px;
 }
+
+.info-container {
+  height: 300px;
+}
+
+label {
+  margin-right: 5px;
+}

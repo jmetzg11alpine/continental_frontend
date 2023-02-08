@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Stage1 from './components/Stage1'
 import Stage2 from './components/Stage2'
@@ -10,8 +10,6 @@ import Hello from './components/Hello'
 import './styles.css'
 
 const App = () => {
-  const [data, setData] = useState()
-
   return (
     <div>
       <div className='container'>

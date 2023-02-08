@@ -4,7 +4,7 @@ import './styles.css'
 
 const Update = () => {
   const [id, setId] = useState()
-  let url = 'http://127.0.0.1:8000/update'
+  let url = 'https://axh4l5.deta.dev/update'
   const handleSubmit = () => {
     axios.post(url, { id: id })
   }

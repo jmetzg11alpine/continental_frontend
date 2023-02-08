@@ -4,7 +4,7 @@ import './styles.css'
 
 const Create = () => {
   const [title, setTitle] = useState()
-  let url = 'http://127.0.0.1:8000/post'
+  let url = 'https://axh4l5.deta.dev/post'
   const handleSubmit = () => {
     console.log('donkey')
     axios.post(url, { title: title })
