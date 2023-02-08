@@ -1,17 +1,39 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React, { useState, useEffect } from 'react'
+import ReactDOM from 'react-dom/client'
+import Stage1 from './components/Stage1'
+import Stage2 from './components/Stage2'
+import Stage3 from './components/Stage3'
+import Stage4 from './components/Stage4'
+import Create from './components/Create'
+import Update from './components/Update'
+import Hello from './components/Hello'
+import './styles.css'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const App = () => {
+  const [data, setData] = useState()
+
+  return (
+    <div>
+      <div className='container'>
+        <Stage1 />
+        <Stage2 />
+        <Stage3 />
+        <Stage4 />
+      </div>
+      <div className='container'>
+        <Create />
+        <Update />
+      </div>
+      <div className='greeting'>
+        <Hello />
+      </div>
+    </div>
+  )
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+)
