@@ -16,6 +16,7 @@ const Hello = () => {
         <a href='https://www.deta.sh/' target='_blank' rel='noreferrer'>
           Deta
         </a>
+        . It's free and it's not the quickest.
       </p>
       <p>I hope we speak soon!</p>
       <p>Jesse</p>
